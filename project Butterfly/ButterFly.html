@@ -8,7 +8,7 @@
     <meta naem="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="butterfly.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css" type="text/css">
-
+    <script  src="canvas.js"></script>
 
 </head>
 
@@ -17,49 +17,59 @@
         <img src="butterfly.png" style="width: 25px;">
     </header>
     <main>
-        
+
         <div class="grid-container">
             <button type="button" onclick="changeColor(this)">
                 <div class="grid-item1" id="item1">3</div>
-                <div class="student"><input type="text"></inut></div>
+                <div class="student"><input type="text"></inut>
+                </div>
             </button>
             <button type="button" onclick="changeColor(this)">
                 <div class="grid-item2" id="item2">2</div>
-                <div class="student"><input type="text"></inut></div>
+                <div class="student"><input type="text"></inut>
+                </div>
             </button>
             <button type="button" onclick="changeColor(this)">
                 <div class="grid-item3" id="item3">1</div>
-                <div class="student"><input type="text"></inut></div>
+                <div class="student"><input type="text"></inut>
+                </div>
             </button>
             <button type="button" onclick="changeColor(this)">
                 <div class="grid-item4" id="itme4">6</div>
-                <div class="student"><input type="text"></inut></div>
+                <div class="student"><input type="text"></inut>
+                </div>
             </button>
             <button type="button" onclick="changeColor(this)">
                 <div class="grid-item5" id="itme5">5</div>
-                <div class="student"><input type="text"></inut></div>
+                <div class="student"><input type="text"></inut>
+                </div>
             </button>
             <button type="button" onclick="changeColor(this)">
                 <div class="grid-item6">4</div>
-                <div class="student"><input type="text"></inut></div>
+                <div class="student"><input type="text"></inut>
+                </div>
             </button>
             <div class="grid-item"></div>
             <button type="button" onclick="changeColor(this)">
                 <div class="grid-item7">8</div>
-                <div class="student"><input type="text"></inut></div>
+                <div class="student"><input type="text"></inut>
+                </div>
             </button>
             <button type="button" onclick="changeColor(this)">
                 <div class="grid-item8">7</div>
-                <div class="student"><input type="text"></inut></div>
+                <div class="student"><input type="text"></inut>
+                </div>
             </button>
             <div class="grid-item"></div>
-            <button  type="button" onclick="changeColor(this)">
+            <button type="button" onclick="changeColor(this)">
                 <div class="grid-item9">10</div>
-                <div class="student"><input type="text"></inut></div>
+                <div class="student"><input type="text"></inut>
+                </div>
             </button>
-            <button  type="button" onclick="changeColor(this)">
+            <button type="button" onclick="changeColor(this)">
                 <div class="grid-item10">9</div>
-                <div class="student"><input type="text"></inut></div>
+                <div class="student"><input type="text"></inut>
+                </div>
             </button>
 
         </div>
@@ -70,13 +80,17 @@
             </form>
         </div>
 
-        
+        <div id="myCanvas">
+           
+        </div>
+        <button onclick="startGame()">Click me</button>
+
         <script>
             function changeColor(htmlEl) {
-                if(htmlEl.style.backgroundColor == "green"){
+                if (htmlEl.style.backgroundColor == "green") {
                     htmlEl.style.backgroundColor = "rgb(192, 187, 187)";
 
-                }else
+                } else
                     htmlEl.style.backgroundColor = "green";
             }
         </script>
